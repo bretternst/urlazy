@@ -100,9 +100,9 @@ public class MainActivity extends Activity implements ExpandableListAdapter, OnC
 
                 try {
                     byte[] buf = new byte[65536];
+                    int timeouts = 0;
                     onSend();
-                    int timeouts = 1;
-                    while(timeouts < TIMEOUT_RETRIES) {
+                    while(true) {
                         if(this.isInterrupted())
                             return;
                         try {
@@ -114,7 +114,10 @@ public class MainActivity extends Activity implements ExpandableListAdapter, OnC
                             onReceived(payload);
                         } catch (SocketTimeoutException e) {
                             timeouts++;
-                            onSend();
+                            if(timeouts < TIMEOUT_RETRIES)
+                                onSend();
+                            else
+                                break;
                         } catch (JSONException e) {
                             continue;
                         }

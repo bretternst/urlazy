@@ -25,7 +25,7 @@ Just edit the content.yaml file with your desired URLs and then execute urlazy.r
 
 Everything's set up, why don't I see any URLs?
 
-UDP is a lossy protocol, so try hitting refresh a time or two. Every once a while, a packet will be dropped. This is particularly true on iPhone devices that appear to put the network into a "passive" mode that can ignore some traffic. If you still see nothing, ask for help running tcpdump to troubleshoot.
+UDP is a lossy protocol, so try hitting refresh a time or two. Every once in a while, a packet will be dropped. This is particularly true on iPhone devices that appear to put the network into a "passive" mode that can ignore some traffic. If you still see nothing, ask for help running tcpdump to troubleshoot.
 
 Many Windows 8 phones were released with a broken network stack. I've had good luck fixing this with firmware updates, especially on Nokia Lumia devices.
 
