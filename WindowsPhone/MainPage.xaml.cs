@@ -139,7 +139,7 @@ namespace URLazy
                 _socket.BeginReceiveFromGroup(_buf, 0, _buf.Length, socket_Received, null);
                 Dispatcher.BeginInvoke(new Action<string>(OnReceived), payload);
             }
-            catch (SocketException ex)
+            catch (SocketException)
             {
                 return;
             }
