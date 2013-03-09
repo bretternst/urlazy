@@ -1,6 +1,7 @@
 # xcode
 *.pch
 xcuserdata/
+.DS_Store
 
 # intellij
 bin/
