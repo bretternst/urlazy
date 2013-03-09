@@ -30,7 +30,6 @@
 /* Begin PBXFileReference section */
 		8B00628916E6FDCD004084D8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8B00628B16E6FDD4004084D8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		8B45B26816E30A49004CEF17 /* URLazy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "URLazy copy-Info.plist"; path = "/Users/brett/tools/urlazy/iOS/URLazy copy-Info.plist"; sourceTree = "<absolute>"; };
 		8B9E177616E2D3FE00671293 /* URLazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9E177A16E2D3FE00671293 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B9E177C16E2D3FE00671293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,7 +83,6 @@
 				8B9E178016E2D3FE00671293 /* URLazy */,
 				8B9E177916E2D3FE00671293 /* Frameworks */,
 				8B9E177716E2D3FE00671293 /* Products */,
-				8B45B26816E30A49004CEF17 /* URLazy copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,8 +288,8 @@
 		8B9E179516E2D3FE00671293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URLazy/URLazy-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "URLazy/URLazy-Info.plist";
 				PRODUCT_NAME = "${TARGETNAME}";
 				WRAPPER_EXTENSION = app;
@@ -301,8 +299,8 @@
 		8B9E179616E2D3FE00671293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "URLazy/URLazy-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "URLazy/URLazy-Info.plist";
 				PRODUCT_NAME = "${TARGETNAME}";
 				WRAPPER_EXTENSION = app;
