@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B00628A16E6FDCD004084D8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B00628916E6FDCD004084D8 /* icon.png */; };
+		8B00628C16E6FDD4004084D8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B00628B16E6FDD4004084D8 /* icon@2x.png */; };
+		8B9E177B16E2D3FE00671293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E177A16E2D3FE00671293 /* UIKit.framework */; };
+		8B9E177D16E2D3FE00671293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E177C16E2D3FE00671293 /* Foundation.framework */; };
+		8B9E177F16E2D3FE00671293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E177E16E2D3FE00671293 /* CoreGraphics.framework */; };
+		8B9E178516E2D3FE00671293 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B9E178316E2D3FE00671293 /* InfoPlist.strings */; };
+		8B9E178716E2D3FE00671293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E178616E2D3FE00671293 /* main.m */; };
+		8B9E178B16E2D3FE00671293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E178A16E2D3FE00671293 /* AppDelegate.m */; };
+		8B9E178E16E2D3FE00671293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E178D16E2D3FE00671293 /* ViewController.m */; };
+		8B9E179116E2D3FE00671293 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9E178F16E2D3FE00671293 /* ViewController.xib */; };
+		8B9E179F16E2F47900671293 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E179C16E2F47900671293 /* GCDAsyncSocket.m */; };
+		8B9E17A016E2F47900671293 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E179E16E2F47900671293 /* GCDAsyncUdpSocket.m */; };
+		8B9E17A316E2F88D00671293 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E17A216E2F88D00671293 /* Security.framework */; };
+		8B9E17A516E2F8C400671293 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9E17A416E2F8C400671293 /* CFNetwork.framework */; };
+		8BAE41BC16E9AAFE00DF3414 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE41BB16E9AAFE00DF3414 /* SystemConfiguration.framework */; };
+		8BAE41BE16EADD1500DF3414 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BAE41BD16EADD1500DF3414 /* Default.png */; };
+		8BAE41C016EADD1E00DF3414 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BAE41BF16EADD1E00DF3414 /* Default@2x.png */; };
+		8BAE41C216EADE7500DF3414 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BAE41C116EADE7500DF3414 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B00628916E6FDCD004084D8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8B00628B16E6FDD4004084D8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		8B45B26816E30A49004CEF17 /* URLazy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "URLazy copy-Info.plist"; path = "/Users/brett/tools/urlazy/iOS/URLazy copy-Info.plist"; sourceTree = "<absolute>"; };
+		8B9E177616E2D3FE00671293 /* URLazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLazy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9E177A16E2D3FE00671293 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8B9E177C16E2D3FE00671293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B9E177E16E2D3FE00671293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B9E178216E2D3FE00671293 /* URLazy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URLazy-Info.plist"; sourceTree = "<group>"; };
+		8B9E178416E2D3FE00671293 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B9E178616E2D3FE00671293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B9E178816E2D3FE00671293 /* URLazy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URLazy-Prefix.pch"; sourceTree = "<group>"; };
+		8B9E178916E2D3FE00671293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B9E178A16E2D3FE00671293 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B9E178C16E2D3FE00671293 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B9E178D16E2D3FE00671293 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B9E179016E2D3FE00671293 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8B9E179B16E2F47900671293 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		8B9E179C16E2F47900671293 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		8B9E179D16E2F47900671293 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
+		8B9E179E16E2F47900671293 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
+		8B9E17A216E2F88D00671293 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8B9E17A416E2F8C400671293 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8BAE41BB16E9AAFE00DF3414 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BAE41BD16EADD1500DF3414 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8BAE41BF16EADD1E00DF3414 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8BAE41C116EADE7500DF3414 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B9E177316E2D3FE00671293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9E177B16E2D3FE00671293 /* UIKit.framework in Frameworks */,
+				8B9E177D16E2D3FE00671293 /* Foundation.framework in Frameworks */,
+				8B9E177F16E2D3FE00671293 /* CoreGraphics.framework in Frameworks */,
+				8B9E17A316E2F88D00671293 /* Security.framework in Frameworks */,
+				8B9E17A516E2F8C400671293 /* CFNetwork.framework in Frameworks */,
+				8BAE41BC16E9AAFE00DF3414 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B9E176B16E2D3FE00671293 = {
+			isa = PBXGroup;
+			children = (
+				8BAE41C116EADE7500DF3414 /* Default-568h@2x.png */,
+				8BAE41BF16EADD1E00DF3414 /* Default@2x.png */,
+				8BAE41BD16EADD1500DF3414 /* Default.png */,
+				8B00628B16E6FDD4004084D8 /* icon@2x.png */,
+				8B00628916E6FDCD004084D8 /* icon.png */,
+				8B9E178016E2D3FE00671293 /* URLazy */,
+				8B9E177916E2D3FE00671293 /* Frameworks */,
+				8B9E177716E2D3FE00671293 /* Products */,
+				8B45B26816E30A49004CEF17 /* URLazy copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		8B9E177716E2D3FE00671293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E177616E2D3FE00671293 /* URLazy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9E177916E2D3FE00671293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BAE41BB16E9AAFE00DF3414 /* SystemConfiguration.framework */,
+				8B9E17A416E2F8C400671293 /* CFNetwork.framework */,
+				8B9E17A216E2F88D00671293 /* Security.framework */,
+				8B9E177A16E2D3FE00671293 /* UIKit.framework */,
+				8B9E177C16E2D3FE00671293 /* Foundation.framework */,
+				8B9E177E16E2D3FE00671293 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B9E178016E2D3FE00671293 /* URLazy */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E179B16E2F47900671293 /* GCDAsyncSocket.h */,
+				8B9E179C16E2F47900671293 /* GCDAsyncSocket.m */,
+				8B9E179D16E2F47900671293 /* GCDAsyncUdpSocket.h */,
+				8B9E179E16E2F47900671293 /* GCDAsyncUdpSocket.m */,
+				8B9E178916E2D3FE00671293 /* AppDelegate.h */,
+				8B9E178A16E2D3FE00671293 /* AppDelegate.m */,
+				8B9E178C16E2D3FE00671293 /* ViewController.h */,
+				8B9E178D16E2D3FE00671293 /* ViewController.m */,
+				8B9E178F16E2D3FE00671293 /* ViewController.xib */,
+				8B9E178116E2D3FE00671293 /* Supporting Files */,
+			);
+			path = URLazy;
+			sourceTree = "<group>";
+		};
+		8B9E178116E2D3FE00671293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B9E178216E2D3FE00671293 /* URLazy-Info.plist */,
+				8B9E178316E2D3FE00671293 /* InfoPlist.strings */,
+				8B9E178616E2D3FE00671293 /* main.m */,
+				8B9E178816E2D3FE00671293 /* URLazy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B9E177516E2D3FE00671293 /* URLazy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B9E179416E2D3FE00671293 /* Build configuration list for PBXNativeTarget "URLazy" */;
+			buildPhases = (
+				8B9E177216E2D3FE00671293 /* Sources */,
+				8B9E177316E2D3FE00671293 /* Frameworks */,
+				8B9E177416E2D3FE00671293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLazy;
+			productName = URLazy;
+			productReference = 8B9E177616E2D3FE00671293 /* URLazy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B9E176D16E2D3FE00671293 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 8B9E177016E2D3FE00671293 /* Build configuration list for PBXProject "URLazy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8B9E176B16E2D3FE00671293;
+			productRefGroup = 8B9E177716E2D3FE00671293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B9E177516E2D3FE00671293 /* URLazy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B9E177416E2D3FE00671293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9E178516E2D3FE00671293 /* InfoPlist.strings in Resources */,
+				8B9E179116E2D3FE00671293 /* ViewController.xib in Resources */,
+				8B00628A16E6FDCD004084D8 /* icon.png in Resources */,
+				8B00628C16E6FDD4004084D8 /* icon@2x.png in Resources */,
+				8BAE41BE16EADD1500DF3414 /* Default.png in Resources */,
+				8BAE41C016EADD1E00DF3414 /* Default@2x.png in Resources */,
+				8BAE41C216EADE7500DF3414 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B9E177216E2D3FE00671293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9E178716E2D3FE00671293 /* main.m in Sources */,
+				8B9E178B16E2D3FE00671293 /* AppDelegate.m in Sources */,
+				8B9E178E16E2D3FE00671293 /* ViewController.m in Sources */,
+				8B9E179F16E2F47900671293 /* GCDAsyncSocket.m in Sources */,
+				8B9E17A016E2F47900671293 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B9E178316E2D3FE00671293 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B9E178416E2D3FE00671293 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8B9E178F16E2D3FE00671293 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B9E179016E2D3FE00671293 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B9E179216E2D3FE00671293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B9E179316E2D3FE00671293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B9E179516E2D3FE00671293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLazy/URLazy-Prefix.pch";
+				INFOPLIST_FILE = "URLazy/URLazy-Info.plist";
+				PRODUCT_NAME = "${TARGETNAME}";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B9E179616E2D3FE00671293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLazy/URLazy-Prefix.pch";
+				INFOPLIST_FILE = "URLazy/URLazy-Info.plist";
+				PRODUCT_NAME = "${TARGETNAME}";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B9E177016E2D3FE00671293 /* Build configuration list for PBXProject "URLazy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9E179216E2D3FE00671293 /* Debug */,
+				8B9E179316E2D3FE00671293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B9E179416E2D3FE00671293 /* Build configuration list for PBXNativeTarget "URLazy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9E179516E2D3FE00671293 /* Debug */,
+				8B9E179616E2D3FE00671293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B9E176D16E2D3FE00671293 /* Project object */;
+}

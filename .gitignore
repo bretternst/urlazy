@@ -1,0 +1,19 @@
+# xcode
+*.pch
+xcuserdata/
+
+# intellij
+bin/
+out/
+*.ipr
+*.iws
+.idea/
+target
+gen/
+local.properties
+
+# visual studio
+obj/
+*.suo
+*.user
+packages/
