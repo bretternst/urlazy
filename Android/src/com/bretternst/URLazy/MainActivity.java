@@ -1,4 +1,4 @@
-package com.iconmobile.URLazy;
+package com.bretternst.URLazy;
 
 import java.io.IOException;
 import java.util.*;
