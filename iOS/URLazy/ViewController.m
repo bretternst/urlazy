@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  URLazy
-//
-//  Created by Brett Ernst on 3/2/13.
-//  Copyright (c) 2013 iconmobile LLC. All rights reserved.
-//
-
 #import <sys/socket.h>
 #import <netinet/in.h>
 #import <arpa/inet.h>
