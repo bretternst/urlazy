@@ -1,3 +1,6 @@
 [submodule "urlazy/iOS/CocoaAsyncSocket"]
 	path = urlazy/iOS/CocoaAsyncSocket
 	url = https://github.com/robbiehanson/CocoaAsyncSocket.git
+[submodule "iOS/CocoaAsyncSocket"]
+	path = iOS/CocoaAsyncSocket
+	url = https://github.com/robbiehanson/CocoaAsyncSocket.git
