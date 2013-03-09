@@ -101,7 +101,7 @@ public class MainActivity extends Activity implements ExpandableListAdapter, OnC
                 try {
                     byte[] buf = new byte[65536];
                     onSend();
-                    int timeouts = 0;
+                    int timeouts = 1;
                     while(timeouts < TIMEOUT_RETRIES) {
                         if(this.isInterrupted())
                             return;
