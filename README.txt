@@ -19,6 +19,10 @@ On that note, If my workstation's IP changes, will I have to update my URL list?
 
 Nope. Use URLs in the format: http://./path/to/project/ and URLazy will automatically fill in the IP. If you take your laptop home or otherwise get a new IP, your device will still use the right URLs.
 
+How do I run the server?
+
+Just edit the content.yaml file with your desired URLs and then execute urlazy.rb. Your mobile devices should now find the URLs you have published on your local network.
+
 Everything's set up, why don't I see any URLs?
 
 UDP is a lossy protocol, so try hitting refresh a time or two. Every once a while, a packet will be dropped. This is particularly true on iPhone devices that appear to put the network into a "passive" mode that can ignore some traffic. If you still see nothing, ask for help running tcpdump to troubleshoot.
