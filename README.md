@@ -3,23 +3,33 @@ What is this?
 
 URLazy is an app for developers and testers who hate typing URLs into mobile keyboards, especially when working with many devices. It finds collections of URLs on your local network and lets you open them in the mobile browser with a single tap.
 
+Update (3/10/2013)
+------------------
+A GUI server app is now available for Windows. See below for download link and instructions. A similar version for OSX is in development; in the meantime, you can use the provided Ruby script to serve your links.
+
 How does it work?
 -----------------
 
-You announce URLs you're interested in by running a Ruby script on your workstation, VM or local server. It waits for queries and then serves up a collection of URLs from a YAML file on demand. When you launch the app on your device, a query is sent out via multicast UDP. The Ruby script answers this with a multicast response and the app displays your list of URLs and any other collections it finds. Just tap on one and off you go.
+You announce URLs you're interested in by running a server on your workstation, VM or local server. It waits for queries and then serves up a collection of URLs from a YAML file on demand. When you launch the app on your device, a query is sent out via multicast UDP. The Ruby script answers this with a multicast response and the app displays your list of URLs and any other collections it finds. Just tap on one and off you go.
 
 If you change your list of URLs, just save the file and hit refresh on your device. An instance of the script could be run as a service on a local server to provide easy access to test URLs for all the developers, PMs and testers on your project.
 
 URLazy is all about ZERO CONFIGURATION. Using multicast allows it to find data sources on your LAN (or WAN if company routers are configured to support it) without giving it any info. You should be able to pick up a fresh device and load your projects without typing a thing.
 
-How do I set up the server?
----------------------------
+How do I set up the server on OSX or Linux?
+-------------------------------------------
+
+If you are running OSX or Linux, a Ruby script is provided to publish your links.
 
 Just execute the urlazy.rb Ruby script on any Mac OSX or Linux environment. If you need to install Ruby on your Mac, I recommend the RailsInstaller bundle found here: http://railsinstaller.org/
 
 The script requires Ruby 1.9.3 or greater as well as the 'json' and 'yaml' modules. If these modules are not installed, you may install them by running "gem install yaml" and "gem install json".
 
 To define the URLs you would like to publish on your network, just edit content.yaml. The file format is extremely simple and some sample URLs are provided to get you started. You may edit content.yaml while the server is running.
+
+How do I set up the server on Windows?
+--------------------------------------
+Download the server installer from https://s3-us-west-2.amazonaws.com/urlazy/urlazy.msi and run it. Whenever the application is running, your device should find your collection of links. You can edit the links right in the application, and they will be saved when you close it.
 
 Why do this? Why not use...
 ---------------------------
