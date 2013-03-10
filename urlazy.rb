@@ -1,10 +1,21 @@
 #!/usr/bin/env ruby
 
-require 'yaml'
-require 'socket'
-require 'json'
-require 'uri'
-require 'ipaddr'
+unless RUBY_VERSION.to_i >= 2 || (RUBY_VERSION.to_i == 1 && RUBY_VERSION.split('.')[1].to_i >= 9)
+    puts 'This script requires Ruby 1.9 or greater.'
+    exit(0)
+end
+
+begin
+    require 'socket'
+    require 'uri'
+    require 'ipaddr'
+    require 'yaml'
+    require 'json'
+rescue LoadError => e
+    puts e
+    puts 'This script requires the following modules: socket, uri, ipaddr, yaml, json'
+    exit(0)
+end
 
 MULTICAST_ADDR = '239.255.41.1';
 MULTICAST_PORT = 4111;
