@@ -11,8 +11,9 @@ MULTICAST_PORT = 4111;
 
 module URLazy
     class Listener
-        def initialize(content_path, port = MULTICAST_PORT)
+        def initialize(content_path, addr = MULTICAST_ADDR, port = MULTICAST_PORT)
             @path = content_path
+            @addr = addr
             @port = port
             @host = Socket.gethostname
             ipaddr = Socket.ip_address_list.detect{|intf| intf.ipv4? && !intf.ipv4_loopback? \
@@ -23,7 +24,7 @@ module URLazy
         end
 
         def loop
-            ip = IPAddr.new(MULTICAST_ADDR).hton + IPAddr.new('0.0.0.0').hton
+            ip = IPAddr.new(@addr).hton + IPAddr.new('0.0.0.0').hton
             sock = UDPSocket.new(Socket::AF_INET)
             sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_MULTICAST_LOOP, [1].pack('i'))
             sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_ADD_MEMBERSHIP, ip)
