@@ -39,8 +39,10 @@ module URLazy
             ip = IPAddr.new(@addr).hton + IPAddr.new('0.0.0.0').hton
             sock = UDPSocket.new(Socket::AF_INET)
             sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_MULTICAST_LOOP, [1].pack('i'))
+            puts "Joined multicast group #{@addr}"
             sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_ADD_MEMBERSHIP, ip)
             sock.bind('', @port)
+            puts "Server is listening on port #{@port}"
             while true
                 begin
                     mesg, sender = sock.recvfrom_nonblock(0)
