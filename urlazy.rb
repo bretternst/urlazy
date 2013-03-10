@@ -14,6 +14,7 @@ begin
 rescue LoadError => e
     puts e
     puts 'This script requires the following modules: socket, uri, ipaddr, yaml, json'
+    puts 'You can run "gem install <module>" to install missing modules.'
     exit(0)
 end
 
