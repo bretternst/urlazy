@@ -29,7 +29,7 @@ To define the URLs you would like to publish on your network, just edit content.
 
 How do I set up the server on Windows?
 --------------------------------------
-Download the server installer from https://s3-us-west-2.amazonaws.com/urlazy/urlazy.msi and run it. Whenever the application is running, your device should find your collection of links. You can edit the links right in the application, and they will be saved when you close it.
+Download the server installer from https://s3-us-west-2.amazonaws.com/urlazy/urlazy-1.0.0.msi and run it. Whenever the application is running, your device should find your collection of links. You can edit the links right in the application, and they will be saved when you close it.
 
 Why do this? Why not use...
 ---------------------------
