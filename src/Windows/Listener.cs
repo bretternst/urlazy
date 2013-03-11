@@ -16,6 +16,7 @@ namespace URLazyServer
 
         UdpClient _socket;
         Func<IDictionary<string, string>> _getContent;
+        IPAddress _multicastAddr;
 
         public Listener(Func<IDictionary<string,string>> getContent, string addr = MulticastAddr, int port = ServerPort)
         {
@@ -27,7 +28,8 @@ namespace URLazyServer
                        select ip.Address).FirstOrDefault();
             _socket = new UdpClient(new IPEndPoint(this.LocalIPAddress, port));
             _socket.MulticastLoopback = false;
-            _socket.JoinMulticastGroup(IPAddress.Parse(addr), this.LocalIPAddress);
+            _multicastAddr = IPAddress.Parse(addr);
+            _socket.JoinMulticastGroup(_multicastAddr, this.LocalIPAddress);
             _socket.BeginReceive(OnReceive, null);
         }
 
@@ -42,9 +44,8 @@ namespace URLazyServer
                 host = Environment.MachineName,
                 content = _getContent().ToDictionary(kv => kv.Key, kv => ProcessUrl(kv.Value))
             });
-            //var buf = Encoding.UTF8.GetBytes(payload);
-            var buf = Encoding.UTF8.GetBytes(@"{host:""foo"",content:{foo:""bar""}}");
-            _socket.Send(buf, buf.Length, ep);
+            var buf = Encoding.UTF8.GetBytes(payload);
+            _socket.Send(buf, buf.Length, new IPEndPoint(_multicastAddr, ep.Port));
             _socket.BeginReceive(OnReceive, null);
         }
 
