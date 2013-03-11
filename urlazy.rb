@@ -61,7 +61,7 @@ module URLazy
         private
         def process_url(url)
             uri = URI.parse(url)
-            if @my_ipv4 && uri.host == '.'
+            if @my_ipv4 && uri.host == 'localhost'
                 uri.host = @my_ipv4
                 return uri.to_s
             end

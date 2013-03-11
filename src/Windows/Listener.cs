@@ -14,23 +14,24 @@ namespace URLazyServer
         const string MulticastAddr = "239.255.41.1";
         const int ServerPort = 4111;
 
-        IPAddress _myAddr;
         UdpClient _socket;
         Func<IDictionary<string, string>> _getContent;
 
         public Listener(Func<IDictionary<string,string>> getContent, string addr = MulticastAddr, int port = ServerPort)
         {
             _getContent = getContent;
-            _myAddr = (from iface in NetworkInterface.GetAllNetworkInterfaces()
+            this.LocalIPAddress = (from iface in NetworkInterface.GetAllNetworkInterfaces()
                        let ipprops = iface.GetIPProperties()
                        let ip = ipprops.UnicastAddresses.FirstOrDefault(ip => ip.DuplicateAddressDetectionState == DuplicateAddressDetectionState.Preferred && ip.AddressPreferredLifetime != UInt32.MaxValue)
                        where ip != null
                        select ip.Address).FirstOrDefault();
-            _socket = new UdpClient(port);
+            _socket = new UdpClient(new IPEndPoint(this.LocalIPAddress, port));
             _socket.MulticastLoopback = false;
-            _socket.JoinMulticastGroup(IPAddress.Parse(addr), _myAddr);
+            _socket.JoinMulticastGroup(IPAddress.Parse(addr), this.LocalIPAddress);
             _socket.BeginReceive(OnReceive, null);
         }
+
+        public IPAddress LocalIPAddress { get; set; }
 
         private void OnReceive(IAsyncResult ar)
         {
@@ -39,9 +40,10 @@ namespace URLazyServer
             var payload = JsonConvert.SerializeObject(new
             {
                 host = Environment.MachineName,
-                content = _getContent()
+                content = _getContent().ToDictionary(kv => kv.Key, kv => ProcessUrl(kv.Value))
             });
-            var buf = Encoding.UTF8.GetBytes(payload);
+            //var buf = Encoding.UTF8.GetBytes(payload);
+            var buf = Encoding.UTF8.GetBytes(@"{host:""foo"",content:{foo:""bar""}}");
             _socket.Send(buf, buf.Length, ep);
             _socket.BeginReceive(OnReceive, null);
         }
@@ -49,6 +51,24 @@ namespace URLazyServer
         public void Dispose()
         {
             _socket.Close();
+        }
+
+        string ProcessUrl(string url)
+        {
+            try
+            {
+                var uri = new UriBuilder(url);
+                if (uri.Host == "localhost")
+                {
+                    uri.Host = this.LocalIPAddress.ToString();
+                    return uri.ToString();
+                }
+                return url;
+            }
+            catch (FormatException)
+            {
+                return url;
+            }
         }
     }
 }

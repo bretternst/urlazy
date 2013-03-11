@@ -39,7 +39,7 @@ Why do this? Why not use...
 
 On that note, If my workstation's IP changes, will I have to update my URL list?
 
-Nope. Use URLs in the format: http://./path/to/project/ and URLazy will automatically fill in the IP. If you take your laptop home or otherwise get a new IP, your device will still use the right URLs.
+Nope. Use URLs in the format: http://localhost/path/to/project/ and URLazy will automatically fill in the IP. If you take your laptop home or otherwise get a new IP, your device will still use the right URLs.
 
 Everything's set up, why don't I see any URLs?
 ----------------------------------------------

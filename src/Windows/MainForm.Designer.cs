@@ -36,6 +36,7 @@
             this.url = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblHostname = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblYourIP = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdContent)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -46,16 +47,18 @@
             this.panel1.Controls.Add(this.Label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(667, 48);
+            this.panel1.Size = new System.Drawing.Size(889, 59);
             this.panel1.TabIndex = 0;
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(3, 18);
+            this.Label1.Location = new System.Drawing.Point(4, 22);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(266, 13);
+            this.Label1.Size = new System.Drawing.Size(355, 17);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "Enter your URLs below and tap refresh on your device.";
             // 
@@ -66,9 +69,10 @@
             this.name,
             this.url});
             this.grdContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdContent.Location = new System.Drawing.Point(0, 48);
+            this.grdContent.Location = new System.Drawing.Point(0, 59);
+            this.grdContent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdContent.Name = "grdContent";
-            this.grdContent.Size = new System.Drawing.Size(667, 319);
+            this.grdContent.Size = new System.Drawing.Size(889, 393);
             this.grdContent.TabIndex = 1;
             // 
             // name
@@ -90,28 +94,37 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblHostname});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 345);
+            this.lblHostname,
+            this.lblYourIP});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 427);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(667, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(889, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // lblHostname
             // 
             this.lblHostname.Name = "lblHostname";
-            this.lblHostname.Size = new System.Drawing.Size(65, 17);
+            this.lblHostname.Size = new System.Drawing.Size(80, 20);
             this.lblHostname.Text = "Hostname:";
+            // 
+            // lblYourIP
+            // 
+            this.lblYourIP.Name = "lblYourIP";
+            this.lblYourIP.Size = new System.Drawing.Size(58, 20);
+            this.lblYourIP.Text = "Your IP:";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 367);
+            this.ClientSize = new System.Drawing.Size(889, 452);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.grdContent);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "URLazy Server";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
@@ -135,6 +148,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lblHostname;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn url;
+        private System.Windows.Forms.ToolStripStatusLabel lblYourIP;
     }
 }
 

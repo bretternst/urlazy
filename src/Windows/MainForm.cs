@@ -38,7 +38,17 @@ namespace URLazyServer
             grdContent.DataSource = _entries;
             _entries.ListChanged += _entries_ListChanged;
             this.UpdateContent();
-            _listener = new Listener(() => _content);
+            try
+            {
+                _listener = new Listener(() => _content);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to start server: " + ex.Message, "Error");
+                Application.Exit();
+                return;
+            }
+            lblYourIP.Text = "Your IP: " + _listener.LocalIPAddress.ToString();
         }
 
         void UpdateContent()
