@@ -168,9 +168,20 @@ namespace URLazy
             if (list.SelectedItem != null)
             {
                 var item = (KeyValuePair<string, string>)list.SelectedItem;
-                var task = new WebBrowserTask();
-                task.Uri = new Uri(item.Value);
-                task.Show();
+                try
+                {
+                    var task = new WebBrowserTask();
+                    task.Uri = new Uri(item.Value);
+                    task.Show();
+                }
+                catch (UriFormatException)
+                {
+                    var result = MessageBox.Show("The selected URL is invalid and cannot be opened. Copy to clipboard instead?", "Invalid URL", MessageBoxButton.OKCancel);
+                    if (result == MessageBoxResult.OK)
+                    {
+                        Clipboard.SetText(item.Value);
+                    }
+                }
             }
             list.SelectedItem = null;
         }
@@ -183,7 +194,7 @@ namespace URLazy
 
         private void OnNoNetwork()
         {
-            MessageBox.Show("This app requires a Wi-Fi connection.");
+            MessageBox.Show("This app requires a Wi-Fi connection. The app will now exit.");
             throw new Exception("No network available.");
         }
     }
