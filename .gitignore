@@ -2,6 +2,8 @@
 *.pch
 xcuserdata/
 .DS_Store
+*.pkg
+*.xcworkspacedata
 
 # intellij
 bin/

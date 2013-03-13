@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BDACA3A16ED696400D9BA32 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDACA3916ED696400D9BA32 /* Cocoa.framework */; };
+		8BDACA4416ED696400D9BA32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BDACA4216ED696400D9BA32 /* InfoPlist.strings */; };
+		8BDACA4616ED696400D9BA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDACA4516ED696400D9BA32 /* main.m */; };
+		8BDACA4A16ED696400D9BA32 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8BDACA4816ED696400D9BA32 /* Credits.rtf */; };
+		8BDACA4D16ED696400D9BA32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDACA4C16ED696400D9BA32 /* AppDelegate.m */; };
+		8BDACA5016ED696400D9BA32 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDACA4E16ED696400D9BA32 /* MainMenu.xib */; };
+		8BDACA5A16ED6A3B00D9BA32 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDACA5716ED6A3B00D9BA32 /* GCDAsyncSocket.m */; };
+		8BDACA5B16ED6A3B00D9BA32 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDACA5916ED6A3B00D9BA32 /* GCDAsyncUdpSocket.m */; };
+		8BDACA5D16ED6A6000D9BA32 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDACA5C16ED6A6000D9BA32 /* Security.framework */; };
+		8BDACA6916ED6CB500D9BA32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDACA6716ED6CB500D9BA32 /* MainViewController.m */; };
+		8BDACA6A16ED6CB500D9BA32 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDACA6816ED6CB500D9BA32 /* MainViewController.xib */; };
+		8BE0D43C16EFF5E800B12210 /* Listener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0D43B16EFF5E800B12210 /* Listener.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BDACA3616ED696400D9BA32 /* URLazyServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLazyServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDACA3916ED696400D9BA32 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8BDACA3C16ED696400D9BA32 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8BDACA3D16ED696400D9BA32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8BDACA3E16ED696400D9BA32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BDACA4116ED696400D9BA32 /* URLazyServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "URLazyServer-Info.plist"; sourceTree = "<group>"; };
+		8BDACA4316ED696400D9BA32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8BDACA4516ED696400D9BA32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BDACA4716ED696400D9BA32 /* URLazyServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URLazyServer-Prefix.pch"; sourceTree = "<group>"; };
+		8BDACA4916ED696400D9BA32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8BDACA4B16ED696400D9BA32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BDACA4C16ED696400D9BA32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BDACA4F16ED696400D9BA32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8BDACA5616ED6A3B00D9BA32 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ../../iOS/CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		8BDACA5716ED6A3B00D9BA32 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ../../iOS/CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		8BDACA5816ED6A3B00D9BA32 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ../../iOS/CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		8BDACA5916ED6A3B00D9BA32 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ../../iOS/CocoaAsyncSocket/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		8BDACA5C16ED6A6000D9BA32 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8BDACA6616ED6CB500D9BA32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8BDACA6716ED6CB500D9BA32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8BDACA6816ED6CB500D9BA32 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8BE0D43A16EFF5E800B12210 /* Listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listener.h; sourceTree = "<group>"; };
+		8BE0D43B16EFF5E800B12210 /* Listener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listener.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BDACA3316ED696400D9BA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDACA3A16ED696400D9BA32 /* Cocoa.framework in Frameworks */,
+				8BDACA5D16ED6A6000D9BA32 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BDACA2D16ED696400D9BA32 = {
+			isa = PBXGroup;
+			children = (
+				8BDACA3F16ED696400D9BA32 /* URLazyServer */,
+				8BDACA3816ED696400D9BA32 /* Frameworks */,
+				8BDACA3716ED696400D9BA32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BDACA3716ED696400D9BA32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BDACA3616ED696400D9BA32 /* URLazyServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BDACA3816ED696400D9BA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BDACA5C16ED6A6000D9BA32 /* Security.framework */,
+				8BDACA3916ED696400D9BA32 /* Cocoa.framework */,
+				8BDACA3B16ED696400D9BA32 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BDACA3B16ED696400D9BA32 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BDACA3C16ED696400D9BA32 /* AppKit.framework */,
+				8BDACA3D16ED696400D9BA32 /* CoreData.framework */,
+				8BDACA3E16ED696400D9BA32 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8BDACA3F16ED696400D9BA32 /* URLazyServer */ = {
+			isa = PBXGroup;
+			children = (
+				8BDACA5616ED6A3B00D9BA32 /* GCDAsyncSocket.h */,
+				8BDACA5716ED6A3B00D9BA32 /* GCDAsyncSocket.m */,
+				8BDACA5816ED6A3B00D9BA32 /* GCDAsyncUdpSocket.h */,
+				8BDACA5916ED6A3B00D9BA32 /* GCDAsyncUdpSocket.m */,
+				8BDACA4B16ED696400D9BA32 /* AppDelegate.h */,
+				8BDACA4C16ED696400D9BA32 /* AppDelegate.m */,
+				8BDACA4E16ED696400D9BA32 /* MainMenu.xib */,
+				8BDACA4016ED696400D9BA32 /* Supporting Files */,
+				8BDACA6616ED6CB500D9BA32 /* MainViewController.h */,
+				8BDACA6716ED6CB500D9BA32 /* MainViewController.m */,
+				8BDACA6816ED6CB500D9BA32 /* MainViewController.xib */,
+				8BE0D43A16EFF5E800B12210 /* Listener.h */,
+				8BE0D43B16EFF5E800B12210 /* Listener.m */,
+			);
+			path = URLazyServer;
+			sourceTree = "<group>";
+		};
+		8BDACA4016ED696400D9BA32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BDACA4116ED696400D9BA32 /* URLazyServer-Info.plist */,
+				8BDACA4216ED696400D9BA32 /* InfoPlist.strings */,
+				8BDACA4516ED696400D9BA32 /* main.m */,
+				8BDACA4716ED696400D9BA32 /* URLazyServer-Prefix.pch */,
+				8BDACA4816ED696400D9BA32 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BDACA3516ED696400D9BA32 /* URLazyServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BDACA5316ED696400D9BA32 /* Build configuration list for PBXNativeTarget "URLazyServer" */;
+			buildPhases = (
+				8BDACA3216ED696400D9BA32 /* Sources */,
+				8BDACA3316ED696400D9BA32 /* Frameworks */,
+				8BDACA3416ED696400D9BA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = URLazyServer;
+			productName = URLazyServer;
+			productReference = 8BDACA3616ED696400D9BA32 /* URLazyServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BDACA2E16ED696400D9BA32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brett Ernst";
+			};
+			buildConfigurationList = 8BDACA3116ED696400D9BA32 /* Build configuration list for PBXProject "URLazyServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BDACA2D16ED696400D9BA32;
+			productRefGroup = 8BDACA3716ED696400D9BA32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BDACA3516ED696400D9BA32 /* URLazyServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BDACA3416ED696400D9BA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDACA4416ED696400D9BA32 /* InfoPlist.strings in Resources */,
+				8BDACA4A16ED696400D9BA32 /* Credits.rtf in Resources */,
+				8BDACA5016ED696400D9BA32 /* MainMenu.xib in Resources */,
+				8BDACA6A16ED6CB500D9BA32 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BDACA3216ED696400D9BA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDACA4616ED696400D9BA32 /* main.m in Sources */,
+				8BDACA4D16ED696400D9BA32 /* AppDelegate.m in Sources */,
+				8BDACA5A16ED6A3B00D9BA32 /* GCDAsyncSocket.m in Sources */,
+				8BDACA5B16ED6A3B00D9BA32 /* GCDAsyncUdpSocket.m in Sources */,
+				8BDACA6916ED6CB500D9BA32 /* MainViewController.m in Sources */,
+				8BE0D43C16EFF5E800B12210 /* Listener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BDACA4216ED696400D9BA32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDACA4316ED696400D9BA32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8BDACA4816ED696400D9BA32 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDACA4916ED696400D9BA32 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8BDACA4E16ED696400D9BA32 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BDACA4F16ED696400D9BA32 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BDACA5116ED696400D9BA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BDACA5216ED696400D9BA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BDACA5416ED696400D9BA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLazyServer/URLazyServer-Prefix.pch";
+				INFOPLIST_FILE = "URLazyServer/URLazyServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8BDACA5516ED696400D9BA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "URLazyServer/URLazyServer-Prefix.pch";
+				INFOPLIST_FILE = "URLazyServer/URLazyServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BDACA3116ED696400D9BA32 /* Build configuration list for PBXProject "URLazyServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BDACA5116ED696400D9BA32 /* Debug */,
+				8BDACA5216ED696400D9BA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BDACA5316ED696400D9BA32 /* Build configuration list for PBXNativeTarget "URLazyServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BDACA5416ED696400D9BA32 /* Debug */,
+				8BDACA5516ED696400D9BA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BDACA2E16ED696400D9BA32 /* Project object */;
+}
