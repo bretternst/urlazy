@@ -3,9 +3,12 @@ What is this?
 
 URLazy is an app for developers and testers who hate typing URLs into mobile keyboards, especially when working with many devices. It finds collections of URLs on your local network and lets you open them in the mobile browser with a single tap.
 
-Update (3/10/2013)
+Update (3/12/2013)
 ------------------
-A GUI server app is now available for Windows. See below for download link and instructions. A similar version for OSX is in development; in the meantime, you can use the provided Ruby script to serve your links.
+GUI server apps are now available for OSX and Windows.
+
+OSX: https://s3-us-west-2.amazonaws.com/urlazy/URLazyServer.pkg
+Windows: https://s3-us-west-2.amazonaws.com/urlazy/urlazy-1.0.0.msi 
 
 How does it work?
 -----------------
