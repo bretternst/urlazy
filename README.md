@@ -8,6 +8,7 @@ Update (3/12/2013)
 GUI server apps are now available for OSX and Windows.
 
 OSX: https://s3-us-west-2.amazonaws.com/urlazy/URLazyServer.pkg
+
 Windows: https://s3-us-west-2.amazonaws.com/urlazy/urlazy-1.0.0.msi 
 
 How does it work?
