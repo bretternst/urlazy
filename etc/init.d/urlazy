@@ -1,11 +1,16 @@
 #!/bin/bash
-# urlazy daemon
-# chkconfig: 345 20 80
-# description: URLazy Server
-# processname: urlazy
+### BEGIN INIT INFO
+# Provides:          urlazy
+# Required-Start:    
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: URLazy
+# Description:       URLazy 
+### END INIT INFO
 
-DAEMON_PATH="/home/bernst/urlazy/"
-DAEMON="ruby /home/bernst/urlazy/urlazy.rb"
+DAEMON_PATH="/usr/share/urlazy"
+DAEMON="ruby /usr/share/urlazy/urlazy.rb"
 DAEMONOPTS=""
 
 NAME=urlazy
