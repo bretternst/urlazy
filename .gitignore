@@ -1,5 +1,4 @@
 # xcode
-*.pch
 xcuserdata/
 .DS_Store
 *.pkg
